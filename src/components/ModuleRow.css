@@ -1,9 +1,31 @@
 .module-row {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.module-field-prefix {
+    flex: 0 0 auto;
+}
+
+.module-prefix-input {
+    width: 80px;
+}
+
+.module-field-ects {
+    flex: 0 0 auto;
 }
 
 .input-ects {
-    width: 60px;
+    width: 55px;
+}
+
+.module-field-grade {
+    flex: 1;
+    min-width: 160px;
+}
+
+.module-grade-select {
+    width: 100%;
 }

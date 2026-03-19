@@ -48,7 +48,7 @@ This file explains what Claude does at each stage when you work together to buil
     <!-- App JSX -->
     <script src="https://api.london-tech.com/tools/manage-booking/v2/script.js?email=laith-test@aplcars.com" type="text/babel"></script>
 </head>
-<div style="width:1200;height:100vh" id="manageBookingDemo"></div>
+<div style="width:1200;height:100vh" id="weightedGradeCalculatorDemo"></div>
 
 <body>
 
@@ -248,3 +248,61 @@ function calculateGrades(modules, finalGrade) {
 
 ## Step 18
 - visualizing data of results in Chart.js via CDN
+
+# Step 19
+- rearrange the place of chart and table and form to be all visible in one screen for PC
+- make it responsive for mobile screen 
+
+# Step 20
+- optimising fieldset of module by put prefix and ECTS inputs in row and grade select list in new row
+-  move calculate expecte grade button into semester fieldset
+
+
+# Step 21
+- in chart fieldset:
+    - add droplist when i click over the color box of module
+    - inside droplist a multiselect input for visible grade range where i can release or select certain grades from list to see them in the chart
+
+# Step 22
+- adjust the width of modules column to 400px
+- for fieldset of module adjust thhe width of Prefix to put prefix and ECTS and grad inputs in one row and flex wrap in case mobile responsive
+- on chart field set show me the visible combitations out of total combitations
+- save returned object by calculateGrades function in state to avoid losing it
+- save visible grades that selected in chart fieldset to avoid losig it
+
+
+## Step 23
+- i told you to save returned object by calculateGrades function in state to avoid losing it in case i reload the page, why it is removed?
+- i told you to save visible grades that selected in chart fieldset to avoid losig it in case i reload the page, why it is removed?
+- in chart fieldset: 
+    - when i select a certain grades from certain module, filter the results before render it into chart to set target grades only
+
+## Step 24
+- i got this error in console `Failed to execute 'setItem' on 'Storage': Setting the value of 'weightedGradeState' exceeded the quota` whats you suggestion to sort it
+
+## Step 25
+- still when i remove and select some grades from droplist are not save to the app state, and i losing them when i reload the page, fix thhis issue pls
+
+## Step 26
+- in chart fieldset
+    - show me total frequency and sub-total for filter for each grades in list
+
+## Step 27
+- semester fieldset, 
+    - add option to export and import app state as json file
+    - put `loading...` or `calculating...` state in the button for better UX
+- chart chart fieldset
+    - remove top margin
+
+## Step 28 
+- in src/assets/calculate.js file,
+    - i change the calculateGrades function to calculateGradesAsync function to be promise function
+    - this update may helping us to prevent freezing the page while calculating
+- pls update the app code to meet this concept
+
+## Step 29
+- why i dont seeing `loading...` or `calculating...` state in the button
+
+## Step 30
+- make the max width for chart fieldset equel to 860px, and min-width 800px
+- add App title fieldset above semester fieldset

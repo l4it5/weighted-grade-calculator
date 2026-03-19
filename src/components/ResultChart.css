@@ -1,3 +1,120 @@
 .result-chart-fieldset {
-    margin-top: 10px;
+    margin-top: 0;
+    max-width: 860px;
+    min-width: 800px;
+}
+
+.chart-visible-count {
+    font-size: 11px;
+    margin: 0 0 6px 0;
+    color: #444;
+}
+
+/* Custom legend */
+.chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.chart-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.chart-legend-color {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border: 1px solid #888;
+}
+
+.chart-legend-color:hover {
+    border-color: #333;
+    box-shadow: 0 0 0 1px #333;
+}
+
+.chart-legend-label {
+    font-size: 11px;
+}
+
+/* Color classes matching CHART_COLORS array */
+.chart-color-0 { background-color: #4e79a7; }
+.chart-color-1 { background-color: #f28e2b; }
+.chart-color-2 { background-color: #e15759; }
+.chart-color-3 { background-color: #76b7b2; }
+.chart-color-4 { background-color: #59a14f; }
+.chart-color-5 { background-color: #edc948; }
+.chart-color-6 { background-color: #b07aa1; }
+.chart-color-7 { background-color: #ff9da7; }
+.chart-color-8 { background-color: #9c755f; }
+.chart-color-9 { background-color: #bab0ac; }
+
+/* Dropdown */
+.chart-legend-dropdown {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 10;
+    background: #f0f0f0;
+    border: 1px solid #999;
+    padding: 6px 8px;
+    min-width: 160px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.chart-legend-dropdown-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px;
+    padding-left: 18px;
+}
+
+.chart-legend-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.chart-legend-check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.chart-legend-check input {
+    cursor: pointer;
+    margin: 0;
+}
+
+.chart-dropdown-col-grade {
+    width: 32px;
+    flex-shrink: 0;
+}
+
+.chart-dropdown-col-total {
+    width: 46px;
+    flex-shrink: 0;
+    text-align: right;
+    color: #333;
+}
+
+.chart-dropdown-col-sub {
+    width: 46px;
+    flex-shrink: 0;
+    text-align: right;
+    color: #888;
 }

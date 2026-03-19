@@ -14,7 +14,7 @@ function calculateTotalEctsOfGrades(params={}) {
   return ects_values
 }
 
-function calculateGrades(modules, finalGrade) {
+async function calculateGradesAsync(modules, finalGrade) {
     var total           = parseFloat(finalGrade);
     let finalGradeOfSemester = parseFloat(finalGrade)
     if (isNaN(total)) return null;
