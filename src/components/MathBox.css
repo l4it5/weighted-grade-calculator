@@ -1,0 +1,50 @@
+.math-box {
+    margin-top: 10px;
+    background: #fafafa;
+}
+
+.math-line {
+    margin: 4px 0;
+    font-size: 12px;
+}
+
+.math-label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.math-expr {
+    background: #e8e8e8;
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.math-expr-block {
+    background: #e8e8e8;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    margin: 4px 0;
+    font-size: 12px;
+    display: block;
+}
+
+.math-ranges {
+    background: #d4d0c8;
+    padding: 1px 6px;
+    font-size: 11px;
+}
+
+.math-vars {
+    margin: 2px 0 6px 16px;
+    padding: 0;
+    font-size: 12px;
+    list-style: disc;
+}
+
+.math-var {
+    font-weight: bold;
+    background: #d4d0c8;
+    padding: 0 4px;
+    margin-right: 4px;
+}

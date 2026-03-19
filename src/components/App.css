@@ -1,0 +1,101 @@
+.app-container {
+    padding: 16px;
+    max-width: 600px;
+}
+
+.semester-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.input-sm {
+    width: 80px;
+}
+
+.input-xs {
+    width: 60px;
+}
+
+.input-readonly {
+    background: #e8e8e8;
+}
+
+.calc-button {
+    margin-top: 8px;
+    padding: 4px 12px;
+    font-family: monospace;
+    font-size: 12px;
+    border: 2px outset #aaa;
+    background: #d4d0c8;
+    cursor: pointer;
+}
+
+.calc-button:active {
+    border-style: inset;
+}
+
+.result-fieldset {
+    margin-top: 10px;
+}
+
+.result-checks {
+    font-size: 12px;
+    margin: 4px 0 6px 0;
+}
+
+.result-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.result-nav-info {
+    font-size: 12px;
+}
+
+.result-empty {
+    font-size: 12px;
+    color: red;
+    margin: 4px 0;
+}
+
+.result-scroll {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #999;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #999;
+    padding: 3px 6px;
+    text-align: left;
+}
+
+.result-table thead th {
+    background: #d4d0c8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.result-total td {
+    font-weight: bold;
+    background: #e8e8e8;
+}
+
+.status-ok {
+    color: green;
+}
+
+.status-warn {
+    color: #cc6600;
+}

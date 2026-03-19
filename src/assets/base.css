@@ -1,0 +1,29 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.xp-fieldset {
+    border: 1px solid #999;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    background: #f0f0f0;
+}
+
+.xp-legend {
+    font-size: 12px;
+}
+
+.xp-label {
+    font-size: 12px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.xp-input {
+    border: 2px inset #aaa;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 12px;
+    background: #fff;
+}

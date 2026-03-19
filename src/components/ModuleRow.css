@@ -1,0 +1,9 @@
+.module-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.input-ects {
+    width: 60px;
+}
