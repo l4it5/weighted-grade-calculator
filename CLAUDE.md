@@ -46,6 +46,7 @@ weighted-grade/
 - **Shared styles:** go in `assets/base.css`
 - **State persistence:** `localStorage` via `loadState()` / `saveState()` in assets
 - **Grade calculation:** `calculateTotalEctsOfGrades()` computes `Σ(grade × ects / 100)`. `calculateGrades()` uses recursive looping (equivalent to nested for loops) to find all combinations where the total equals finalGrade. Results are objects `{ grade, ects, index }`. App paginates at 1000 per page with Prev/Next buttons.
+- **Layout:** Two-column on PC (`app-left` = form panel 320px, `app-right` = chart + table, flex fills remaining). Single column stacked on mobile (`@media max-width: 768px`). The root `#weightedGradeCalculatorDemo` div fills full viewport height via CSS (no inline styles).
 - **var over const/let** in `.js` asset files to avoid Babel 6 scoping issues
 - **One component per file** in `components/`
 

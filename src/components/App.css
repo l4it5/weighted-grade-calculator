@@ -1,12 +1,39 @@
 .app-container {
+    display: flex;
+    gap: 16px;
     padding: 16px;
-    max-width: 600px;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.app-title-fieldset {
+    margin-bottom: 8px;
+}
+
+.app-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.app-left {
+    width: 400px;
+    min-width: 300px;
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.app-right {
+    flex: 1;
+    overflow-y: auto;
+    min-width: 0;
 }
 
 .semester-row {
     display: flex;
     gap: 16px;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .input-sm {
@@ -21,8 +48,20 @@
     background: #e8e8e8;
 }
 
-.calc-button {
+.semester-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
     margin-top: 8px;
+    align-items: center;
+}
+
+.import-file-input {
+    display: none;
+}
+
+.calc-button {
+    margin-top: 0;
     padding: 4px 12px;
     font-family: monospace;
     font-size: 12px;
@@ -62,7 +101,7 @@
 }
 
 .result-scroll {
-    max-height: 600px;
+    max-height: 300px;
     overflow-y: auto;
     border: 1px solid #999;
 }
@@ -98,4 +137,26 @@
 
 .status-warn {
     color: #cc6600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        height: auto;
+        overflow: visible;
+    }
+
+    .app-left {
+        width: 100%;
+        overflow-y: visible;
+    }
+
+    .app-right {
+        overflow-y: visible;
+    }
+
+    .result-scroll {
+        max-height: 400px;
+    }
 }
