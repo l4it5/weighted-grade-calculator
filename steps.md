@@ -306,3 +306,7 @@ function calculateGrades(modules, finalGrade) {
 ## Step 30
 - make the max width for chart fieldset equel to 860px, and min-width 800px
 - add App title fieldset above semester fieldset
+
+## Step 31
+- move index.html file from src folder to root folder and ensure to update src for tags
+
